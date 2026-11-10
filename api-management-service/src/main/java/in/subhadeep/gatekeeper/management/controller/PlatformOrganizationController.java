@@ -8,6 +8,7 @@ import in.subhadeep.gatekeeper.management.dto.resquestDto.OrganizationStatusRequ
 import in.subhadeep.gatekeeper.management.dto.resquestDto.TenantAdminRequest;
 import in.subhadeep.gatekeeper.management.service.OrganizationService;
 import jakarta.validation.Valid;
+import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -16,13 +17,11 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/platform/organizations")
+@RequiredArgsConstructor
 public class PlatformOrganizationController {
 
     private final OrganizationService organizationService;
 
-    public PlatformOrganizationController(OrganizationService organizationService) {
-        this.organizationService = organizationService;
-    }
 
     // CRUD --> organsiation
 
