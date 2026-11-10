@@ -1,6 +1,8 @@
 package in.subhadeep.gatekeeper.management.controller;
 
 import in.subhadeep.gatekeeper.management.dto.responseDto.OrganizationResponse;
+import in.subhadeep.gatekeeper.management.dto.resquestDto.TenantOrganizationRequest;
+import in.subhadeep.gatekeeper.management.service.OrganizationService;
 import jakarta.validation.Valid;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

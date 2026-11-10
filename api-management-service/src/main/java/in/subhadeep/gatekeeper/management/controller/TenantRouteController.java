@@ -1,5 +1,13 @@
 package in.subhadeep.gatekeeper.management.controller;
 
+import in.subhadeep.gatekeeper.management.dto.responseDto.AuditRecordResponse;
+import in.subhadeep.gatekeeper.management.dto.responseDto.RouteResponse;
+import in.subhadeep.gatekeeper.management.dto.responseDto.RouteVersionResponse;
+import in.subhadeep.gatekeeper.management.dto.resquestDto.RouteRequest;
+import in.subhadeep.gatekeeper.management.dto.resquestDto.RouteStatusRequest;
+import in.subhadeep.gatekeeper.management.service.RouteService;
+import jakarta.validation.Valid;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
